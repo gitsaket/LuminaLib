@@ -1,0 +1,16 @@
+/frontend/node_modules
+/dist
+/build
+/coverage
+/.vscode
+/.idea
+/.DS_Store
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.log
+*.tsbuildinfo
+/venv
+
