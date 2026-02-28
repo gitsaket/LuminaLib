@@ -11,8 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN chmod +x entrypoint.sh \
-    && addgroup --system lumina \
+RUN addgroup --system lumina \
     && adduser --system --ingroup lumina lumina \
     && chown -R lumina:lumina /app
 
@@ -20,4 +19,3 @@ USER lumina
 
 EXPOSE 8000
 
-#ENTRYPOINT ["./entrypoint.sh"]
