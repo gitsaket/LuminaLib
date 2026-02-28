@@ -1,7 +1,5 @@
 # LuminaLib – Architecture
 
-## System Overview
-
 ## 1. DB Schema Design – User Preferences
 
 ### Design Decisions
