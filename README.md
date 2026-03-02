@@ -81,6 +81,9 @@ mypy app/
 
 # Run migrations manually
 alembic upgrade head
+
+# Tests
+pytest tests/
 ```
 
 ### Migrations
@@ -100,6 +103,9 @@ npm install
 
 # Dev server (hot reload)
 npm run dev
+
+# Test
+npm run test
 
 # Lint
 npm run lint

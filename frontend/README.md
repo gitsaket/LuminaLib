@@ -43,6 +43,7 @@ npm run dev # start development server with hot reload
 npm run build # create production build
 npm run start # start production server
 npm run lint # check for linting errors
+npm run test # run tests
 ```
 
 ## Project Structure

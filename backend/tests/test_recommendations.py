@@ -12,9 +12,6 @@ from app.services.recommendation_service import (
     build_recommendations,
 )
 
-
-# ── Helpers ────────────────────────────────────────────────────────────────
-
 def _make_book(id: int, genre: str = "Fiction", rating: float = 3.0) -> Book:
     b = Book()
     b.id = id
@@ -58,7 +55,6 @@ def _make_db(borrows: list, books_result: list) -> AsyncMock:
     return db
 
 
-# ── _compute_genre_weights ─────────────────────────────────────────────────
 
 async def test_compute_genre_weights_empty_history():
     db = AsyncMock()
@@ -87,8 +83,6 @@ async def test_compute_genre_weights_normalises():
     assert abs(weights["History"] - 1 / 3) < 1e-9
     assert abs(sum(weights.values()) - 1.0) < 1e-9
 
-
-# ── _score_books_content_based ─────────────────────────────────────────────
 
 def test_score_applies_genre_weight():
     books = [_make_book(1, "Fiction", rating=0.0)]
@@ -123,8 +117,6 @@ def test_score_rating_blended():
     scored = _score_books_content_based(books, weights, None)
     assert abs(scored[0][1] - 0.5) < 1e-9  # 5.0 * 0.1
 
-
-# ── build_recommendations ──────────────────────────────────────────────────
 
 async def test_build_recommendations_cold_start():
     """< 2 borrows → cold start strategy, sorted by rating."""

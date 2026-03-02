@@ -47,12 +47,13 @@ Docker steps are in the main README. For local development, follow the steps bel
    uvicorn app.main:app --reload
    ```
 5. #API
-    # URL 
-    API will be available at `http://localhost:8000`
-    # Docs
-    API docs at `http://localhost:8000/docs` (Swagger UI) and `http://localhost:8000/redoc` (ReDoc).
+   # URL
+   API will be available at `http://localhost:8000`
+   # Docs
+   API docs at `http://localhost:8000/docs` (Swagger UI) and `http://localhost:8000/redoc` (ReDoc).
 
 ## Configuration
+
 ```bash
 # App
 ENVIRONMENT: "development", "production"
@@ -78,14 +79,18 @@ OLLAMA_BASE_URL: "http://ollama:11434"
 OLLAMA_MODEL: "llama3.2"
 MAX_CONTENT_LENGTH: int = 2000
 ```
+
 ## Code Quality
 
 ```bash
 ruff check .      # Check code
 ruff format .     # Format code
 ruff check --fix . # Auto-fix issues
+pytest tests/    # Run tests
 ```
+
 ## Structure
+
 ## Project Structure
 
 - `backend/`
@@ -118,5 +123,3 @@ ruff check --fix . # Auto-fix issues
       - `backgroud.py` — Background tasks
     - `utils/`
       - `text_extraction.py`
-
-
