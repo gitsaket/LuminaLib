@@ -19,9 +19,9 @@
 git clone <repo-url> luminalib && cd luminalib
 
 # 2. Copy environment file
-cp .env .env.local   # optionally edit secrets
+cp .env.example .env   # optionally edit secrets
 
-# 3. Start everything
+# 3. Build and up everything
 docker compose up --build
 ```
 
