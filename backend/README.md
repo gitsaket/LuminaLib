@@ -4,11 +4,11 @@ FastAPI backend for LuminaLib library management system.
 
 ## Tech Stack
 
-- FastAPI 0.109.2
+- FastAPI 0.111.0
 - PostgreSQL with SQLAlchemy (async)
 - Alembic for migrations
 - JWT for authentication
-- Pluggable LLM (Ollama/OpenAI) and Storage (Local/S3) backends. S3 is not implemented yet but the architecture supports it.
+- Factory LLM (Ollama/OpenAI) and Storage (Local/S3) backends. S3 is not implemented yet but the architecture supports it.
 
 ## Setup
 
