@@ -39,7 +39,6 @@ Docker Compose will:
  Frontend | http://localhost:3000 
  API | http://localhost:8000 
  API Docs (Swagger) | http://localhost:8000/docs 
- MinIO Console | http://localhost:9001 (minioadmin / minioadmin) 
  Ollama | http://localhost:11434 
 
 ---
