@@ -1,5 +1,5 @@
-"""Pure unit tests for the recommendation service (no real DB)."""
-from unittest.mock import AsyncMock, MagicMock, patch
+"""unit tests for the recommendation service (no real DB)."""
+from unittest.mock import AsyncMock, MagicMock
 
 import pytest
 
